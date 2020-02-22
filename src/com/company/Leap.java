@@ -1,0 +1,24 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Leap {
+    public static void main(String[] args) {
+        System.out.println("Введите год, который Вас интересует");
+        Scanner scan = new Scanner(System.in);
+        int year = scan.nextInt();
+        if (year % 4 == 0)
+            if (year % 100 == 0)
+                if (year % 400 == 0) {
+                    System.out.println(year + "год является високосным");
+                } else {
+                    System.out.println(year + "год не является високосным");
+                }
+            else {
+                System.out.println(year + "год является високосным");
+            }
+        else {
+            System.out.println(year + "год не является високосным");
+        }
+    }
+}
