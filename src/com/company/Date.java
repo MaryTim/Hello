@@ -18,9 +18,7 @@ public class Date {
         } else if ((day == 29) && (month == 2) && ((year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0) &&
                 (year > 0) && (year < 2021))) {
             System.out.println(day + "." + month + "." + year + " введенная дата является реальной");
-        } else if ((year % 400 != 0) || (year % 4 != 0) && (year % 100 == 0) &&
-                (year > 0) && (year < 2021)) {
-            if ((day == 28) && (month == 2)) {
+        } else if (((day > 0) && (day <= 28)) && (month == 2) && ((year > 0) && (year < 2021))) {
                 System.out.println(day + "." + month + "." + year + " введенная дата является реальной");
             } else {
                 System.out.println("Введенная дата не является реальной");
@@ -28,4 +26,3 @@ public class Date {
         }
     }
 
-}
