@@ -8,11 +8,11 @@ public class PrimeNumbers {
         int n = random.nextInt ( 1000 );
         for (int i = 2; i < n; i++) {
             if ( n % i == 0 ) {
-                System.out.println ( n + " не простое" );
+                System.out.println ( n + " не является простым" );
                 return;
             }
         }
-        System.out.println ( n + " простое" );
+        System.out.println ( n + " является простым" );
     }
 }
 
