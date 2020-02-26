@@ -21,7 +21,7 @@ public class TwoDimensionalArray {
         if ( arr1[ i1 ][ j1 ] == arr2[ i2 ][ j2 ] ) {
             System.out.println ( "Выбранные элементы равны " + arr1[ i1 ][ j1 ] + " = " + arr2[ i2 ][ j2 ] );
         } else {
-            System.out.println ( "Выбранные элементы не равны" );
+            System.out.println ( " Выбранные элементы не равны" );
         }
         boolean res = equals ( arr1 , arr2 , 2 , 2 );
     }
