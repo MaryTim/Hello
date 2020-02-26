@@ -7,8 +7,8 @@ public class Rubles {
         System.out.println("Введите число");
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
-        if (((number % 100 >= 11) && (number % 100 <= 14)) || (number % 10 == 5) || (number % 10 == 6) || (number % 10 == 7) || (number % 10 == 8) || (number % 10 == 9) ||
-                (number % 10 == 0)) {
+        if (((number % 100 >= 11) && (number % 100 <= 14)) || (number % 10 == 5) || (number % 10 == 6) || (number % 10 == 7)
+                || (number % 10 == 8) || (number % 10 == 9) || (number % 10 == 0)) {
             System.out.println(number + " рублей");
         } else if ((number % 10 == 4) || (number % 10 == 3) || (number % 10 == 2)) {
             System.out.println(number + " рубля");
