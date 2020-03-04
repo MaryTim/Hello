@@ -1,6 +1,6 @@
 /**Создать класс, описывающий банкомат. Набор купюр, находя щихся в банкомате должен задаваться тремя
  свойствами: количеством купюр номиналом 20, 50 и 100. Сделать методы для
-добавления денег в банкомат. Сделать функцию, снимающую деньги, которая принимает сумму - 
+добавления денег в банкомат. Сделать функцию, снимающую деньги, которая принимает сумму -
 При снятии денег функция должна распечатывать каким количеством купюр какого номинала выдаётся сумма.
 Создать конструктор с тремя параметрами - количеством купюр каждого номинала.
  */
@@ -60,17 +60,17 @@ public class BankomatNew {
         float value3 = value - value2;
 
         if ( requestedMoney % 100 == 0 ) {
-            System.out.println ( "К выдаче " + requestedMoney + " рублей. К выдаче " + requestedMoney / 100 +
+            System.out.println ( "К выдаче " + requestedMoney + " р. К выдаче " + requestedMoney / 100 +
                     " cторублевых купюры" );
 
             return true;
         } else if ( requestedMoney % 50 == 0 ) {
-            System.out.println ( "К выдаче " + requestedMoney + " рублей. К выдаче " + requestedMoney / 50 +
+            System.out.println ( "К выдаче " + requestedMoney + " р. К выдаче " + requestedMoney / 50 +
                     " пятидесятирублевых купюры" );
 
             return true;
         } else if ( requestedMoney % 20 == 0 ) {
-            System.out.println ( "К выдаче " + requestedMoney + " рублей. К выдаче " + requestedMoney / 20 +
+            System.out.println ( "К выдаче " + requestedMoney + " р. К выдаче " + requestedMoney / 20 +
                     " двадцатирублевых купюры" );
 
             return true;
@@ -94,10 +94,10 @@ public class BankomatNew {
 
             колличество20 = (int) value;
 
-            System.out.println ( "К выдаче " + requestedMoney + " денег." +
-                    "Колличество двадцаток: " +  колличество20 + "\n" +
-                    "Колличество пятидесяток: " +  колличество50 + "\n" +
-                    "Колличество соток: " +  колличество100 + "\n");
+            System.out.println ( "К выдаче " + requestedMoney + " р." +
+                    " Колличество двадцаток: " +  колличество20 + "\n" +
+                    " Колличество пятидесяток: " +  колличество50 + "\n" +
+                    " Колличество соток: " +  колличество100 + "\n");
 
             return true;
         } else {
