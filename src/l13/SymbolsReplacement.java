@@ -1,3 +1,6 @@
+//Заменить все грустные смайлы
+// :( в строке на весёлые
+
 package l13;
 
 public class SymbolsReplacement {
