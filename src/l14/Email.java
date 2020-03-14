@@ -18,7 +18,7 @@ public class Email {
         System.out.println("Please enter your e-mail");
         Scanner scanner = new Scanner(System.in);
         String email = scanner.next();
-        Pattern p = Pattern.compile("\\b[a-zA-Z]\\w+.@[a-z]+(.org|.com)\\b");
+        Pattern p = Pattern.compile("\\b[a-zA-Z]\\w+@[a-z]+(.org|.com)\\b");
         Matcher matcher = p.matcher(email);
         if (matcher.find()) {
             System.out.println( "e-mail: " + matcher.group());
