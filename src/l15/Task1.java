@@ -6,7 +6,7 @@ import java.io.*;
 
 public class Task1 {
 
-    private static final Logger LOGGER = Logger.getLogger(Task1.class);
+    private static final Logger LOGGER = Logger.getLogger(Task1.class );
 
     public static void main (String[] args) throws IOException {
         File myFile = new File("src" + File.separator + "l15" + File.separator + "Example");
