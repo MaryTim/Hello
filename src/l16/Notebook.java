@@ -26,7 +26,6 @@ public class Notebook extends Computer implements Serializable {
             FileOutputStream fos = new FileOutputStream("/Users/antonbudkevich/Desktop/MASHA/IDEA/Serialization.txt");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(notebook);
-            oos.writeObject(touchpad);
             oos.close();
         } catch (IOException e) {
             LOGGER.warn(e);
@@ -36,15 +35,11 @@ public class Notebook extends Computer implements Serializable {
             ObjectInputStream ois = new ObjectInputStream(fis);
             Object newNotebook = ois.readObject();
             Notebook notebook1 = (Notebook)newNotebook;
-            Object newTouchpad = ois.readObject();
-            Touchpad touchpad1 = (Touchpad)newTouchpad;
             System.out.println(notebook1.name);
             System.out.println(notebook1.number);
             System.out.println(notebook1.year);
             System.out.println(notebook1.touchpad.hasTouchpad);
             System.out.println(notebook1.color);
-            System.out.println(touchpad1.hasTouchpad);
-
             ois.close();
         } catch (IOException e) {
             LOGGER.warn(e);
