@@ -15,7 +15,6 @@ public class Notebook extends Computer implements Serializable {
         super(nn , n , y);
         this.touchpad = t;
         this.color = c;
-
     }
 
     public static void main (String[] args) throws IOException, ClassNotFoundException {
