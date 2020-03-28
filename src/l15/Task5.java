@@ -23,8 +23,10 @@ public class Task5 {
                 int number = random.nextInt(diff + 1);
                 number += min;
                 System.out.print(number + " ");
-
-                dos.writeInt(number);
+                dos.write((number >>> 24) & 0xFF);
+                dos.write((number >>> 16) & 0xFF);
+                dos.write((number >>> 8) & 0xFF);
+                dos.write((number >>> 0) & 0xFF);
             }
             System.out.println();
             int sum = 0;

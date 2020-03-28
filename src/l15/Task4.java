@@ -27,11 +27,8 @@ public class Task4 {
                         quantity = matcher.group().length();
                         str = matcher.group();
                     }
-                        System.out.print(matcher.group() + "  ");
                 }
-                System.out.println("\n" + str + " - " + quantity + " numerals");
-                System.out.println( );
-                str = "";
+                System.out.println(str);
                 quantity = 0;
             }
         } catch (IOException e) {
