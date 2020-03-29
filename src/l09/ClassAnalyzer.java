@@ -14,7 +14,7 @@ public class ClassAnalyzer {
                 System.out.println(field.getType() + " " + field.getName());
             }
             System.out.println();
-        }
+        } 
     }
 
     public static void analyzeConstructors (Class clazz) {
