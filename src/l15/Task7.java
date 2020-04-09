@@ -10,7 +10,7 @@ public class Task7 {
 
     public static void main (String[] args) throws IOException {
         try (
-                BufferedReader bf = new BufferedReader(new FileReader("src" + File.separator + "l15" + File.separator + "Task1.java"));
+                BufferedReader bf = new BufferedReader(new FileReader("src" + File.separator + "l15" + File.separator + "MyThread.java"));
                 BufferedWriter bw = new BufferedWriter(new FileWriter("src" + File.separator + "l15" + File.separator + "ResultTask7"))) {
             String str = "";
 
